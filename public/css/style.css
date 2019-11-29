@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10765,19 +10766,31 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg {
-  background-image: url("../images/main_bg.jpg");
+  background: url("../images/main_bg.jpg") fixed;
 }
 
 a {
   color: #ffffff;
 }
 
+.big {
+  font-size: 60px;
+}
+
+.red {
+  color: #c42d40;
+}
+
+.maj {
+  text-transform: uppercase;
+}
+
+.courgette {
+  font-family: 'Courgette', cursive;
+}
+
 #main-nav {
-  z-index: 2;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  z-index: 1;
 }
 
 #main-nav .logo {
@@ -10791,7 +10804,6 @@ a {
 
 #main-nav .liens a {
   padding: 15px 30px;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -10799,9 +10811,52 @@ a {
   background-color: #c42d40;
 }
 
+.carousel h1 {
+  font-size: 40px;
+  padding: 0 25%;
+  margin-bottom: 50px;
+}
+
 .carousel-item img {
   filter: brightness(20%);
   -webkit-filter: brightness(20%);
   width: 100%;
+  height: 100vh;
+}
+
+.carousel-caption {
+  top: 30%;
+}
+
+.carousel-caption .btn {
+  border-radius: 10em;
+  padding: 10px 30px;
+}
+
+.carousel-caption .btn-light a {
+  color: #000000;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  width: 4px;
+  height: 4px;
+  border: 6px double #fff;
+  margin-top: 9.5px;
+}
+
+.test {
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 16;
+  background: url(../images/bottom_decoration_img.png) repeat-x;
 }
 /*# sourceMappingURL=style.css.map */
