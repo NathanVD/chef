@@ -10868,8 +10868,34 @@ header .test {
 
 #section1 .section1 .nav-link {
   font-size: 30px;
-  width: 250px;
   border-radius: 0;
+}
+
+@media (max-width: 1199.98px) {
+  #section1 .section1 .nav-link {
+    font-size: 22.5px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #section1 .section1 .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #section1 .section1 .nav-link {
+    font-size: 12px;
+  }
+  #section1 .section1 .nav-link p {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #section1 .section1 .nav-link {
+    font-size: 7.5px;
+  }
 }
 
 #section1 .section1 .nav-link .food {
