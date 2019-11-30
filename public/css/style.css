@@ -10869,6 +10869,7 @@ header .test {
 #section1 .section1 .nav-link {
   font-size: 30px;
   width: 250px;
+  border-radius: 0;
 }
 
 #section1 .section1 .nav-link .food {
@@ -10897,5 +10898,11 @@ header .test {
 
 #section1 .section1 .media img {
   border: 4px solid #dee2e6;
+}
+
+@media (max-width: 575.98px) {
+  #section1 .section1 .media img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
