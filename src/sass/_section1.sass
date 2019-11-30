@@ -1,0 +1,22 @@
+#section1
+    .section1
+        background: url("../images/box-left-top.png") no-repeat, url("../images/box-right-top.png") no-repeat, url("../images/box-bottom-left.png") no-repeat, url("../images/box-bottom_right.png") no-repeat, white
+        background-position: left top, right top, left bottom, right bottom
+        margin: 3% 10%
+        .nav-link
+            font-size: 30px
+            width: 250px
+            .food
+                color: $gray-300
+            &:hover
+                border-right: 5px solid $danger
+                .food
+                    color: $danger
+            &.active
+                border-right: 5px solid $danger
+                .food
+                    color: $danger
+        .media
+            border-bottom: 1px dotted $gray-300
+            img
+                border: 4px solid $gray-300

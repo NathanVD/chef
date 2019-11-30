@@ -19,21 +19,21 @@
     <header>
 
     <!-- Nav -->
-        <div class="position-fixed d-flex justify-content-center mt-3 w-100" id="main-nav">
+        <div class="position-absolute d-flex justify-content-center mt-3 w-100" id="main-nav">
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav d-flex justify-content-center align-items-center w-100">
-                        <div class="liens d-flex flex-wrap">
+                        <div class="liens d-flex flex-wrap bg-dark-transparent">
                             <a class="nav-item nav-link maj active" href="#">Home <span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link maj" href="#">About us</a>
                             <a class="nav-item nav-link maj" href="#">Menu list</a>
                             <a class="nav-item nav-link maj" href="#">Team</a>
                         </div>
                         <img src="./public/images/logo.png" class="logo" alt="Logo">
-                        <div class="liens d-flex flex-wrap">
+                        <div class="liens d-flex flex-wrap bg-dark-transparent">
                             <a class="nav-item nav-link maj" href="#">Reservation</a>
                             <a class="nav-item nav-link maj" href="#">Blog</a>
                             <a class="nav-item nav-link maj" href="#">Testimonials</a>
@@ -57,7 +57,7 @@
                     <img src="./public/images/banner1.jpg" class="d-block" alt="Salade">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="courgette">
-                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj red">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
+                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj text-danger">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
                         </h1>
                         <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-light mx-2">
@@ -73,7 +73,7 @@
                     <img src="./public/images/banner1.jpg" class="d-block" alt="Même salade">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="courgette">
-                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj red">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
+                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj text-danger">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
                         </h1>
                         <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-light mx-2">
@@ -89,7 +89,7 @@
                     <img src="./public/images/banner1.jpg" class="d-block" alt="Toujours cette salade">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="courgette">
-                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj red">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
+                            Whatever your <span class="big maj">occasion</span>,<br><span class="big maj text-danger">taste</span> <span class="big">makes</span> it one to <span class="big">remember!</span>
                         </h1>
                         <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-light mx-2">
@@ -107,34 +107,169 @@
     </header>
 <!-- /Header -->
 
-    <!-- Section 1 -->
+<!-- Section 1 -->
+<section id="section1">
+    <div class="section1 border pt-5">
+        <div class="container d-flex flex-column align-items-center" id="story">
+            <h1 class="courgette"><span class="big text-danger maj">Our</span> Story</h1>
+            <img src="./public/images/decoration_line.png" alt="Séparation">
+            <p class="w-50 mt-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis veniam molestiae laboriosam, consequuntur nihil corrupti iure molestias, rem sed quod suscipit dolores repellat reiciendis? Optio delectus ab facere veritatis.
+            Ipsa accusamus labore enim aliquid optio ducimus alias repellendus exercitationem debitis. Ipsum aliquam, placeat error, officia corporis, accusamus libero illum porro excepturi iste tempore repellat fugiat reprehenderit ipsam tenetur at.
+            Temporibus consectetur facilis expedita natus distinctio voluptates, possimus ipsum corporis explicabo doloremque rem in illum enim cumque dolores? Harum animi eveniet laborum qui esse, unde quos vitae tempore itaque consequuntur.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-5" id="menu">
+            <h1 class="courgette"><span class="big text-danger maj">Our</span> Menu List</h1>
+            <img src="./public/images/decoration_line.png" alt="Séparation">
+            <div class="d-flex mt-5">
+                <nav>
+                    <div class="nav nav-tabs flex-column align-items-start border-bottom-0" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link courgette active text-dark d-flex flex-column align-items-center border-bottom border-top-0 border-left-0" id="nav-breakfast-tab" data-toggle="tab" href="#nav-breakfast" role="tab" aria-controls="nav-home" aria-selected="true">
+                            <i class="fas fa-mug-hot food fa-3x mb-2"></i>
+                            BreakFast
+                        </a>
+                        <a class="nav-item nav-link courgette text-dark d-flex flex-column align-items-center border-bottom border-top-0 border-left-0" id="nav-lunch-tab" data-toggle="tab" href="#nav-lunch" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <i class="fas fa-hamburger food fa-3x mb-2"></i>
+                            Lunch
+                        </a>
+                        <a class="nav-item nav-link courgette text-dark d-flex flex-column align-items-center border-bottom border-top-0 border-left-0" id="nav-snacks-tab" data-toggle="tab" href="#nav-snacks" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <i class="fas fa-utensils food fa-3x mb-2"></i>
+                            Snacks
+                        </a>
+                        <a class="nav-item nav-link courgette text-dark d-flex flex-column align-items-center border-bottom border-top-0 border-left-0" id="nav-dinner-tab" data-toggle="tab" href="#nav-dinner" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <i class="fas fa-mug-hot food fa-3x mb-2"></i>
+                            Dinner
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content mx-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active d-flex" id="nav-breakfast" role="tabpanel" aria-labelledby="nav-breakfast-tab">
+                        <ul class="list-unstyled">
+                            <li class="media my-2 d-flex align-items-center ml-2 mr-4 pb-3">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body d-flex align-items-center">
+                                    <div class="w-50">
+                                        <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                        <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    </div>
+                                    <h2><span class="badge badge-light text-danger rounded-0 px-4">$25</span></h2>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$25</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$25</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$25</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$25</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$35</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$35</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$35</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$35</span>
+                                </div>
+                            </li>
+                            <li class="media w-75 my-2 d-flex align-items-center">
+                                <img src="./public/images/menu_image_1.jpg" class="mr-3 rounded-circle" alt="Café">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">Deer Steak with Potatoes</h5>
+                                    <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                                    <span class="badge badge-secondary">$35</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-lunch" role="tabpanel" aria-labelledby="nav-lunch-tab">
 
-    <!-- /Section1 -->
+                    </div>
+                    <div class="tab-pane fade" id="nav-snacks" role="tabpanel" aria-labelledby="nav-snacks-tab">
 
-    <!-- Section 2 -->
+                    </div>
+                    <div class="tab-pane fade" id="nav-dinner" role="tabpanel" aria-labelledby="nav-dinner-tab">
 
-    <!-- /Section 2 -->
-
-    <!-- Section 3 -->
-
-    <!-- /Section 3 -->
-        
-    <!-- Section 4 -->
-
-    <!-- /Section 4 -->
-        
-    <!-- Section 5 -->
-
-    <!-- /Section 5 -->
-
-    <!-- Footer -->
-
-    <!-- /Footer -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Scripts js -->
+</section>
+<!-- /Section1 -->
+
+<!-- Section 2 -->
+
+<!-- /Section 2 -->
+
+<!-- Section 3 -->
+
+<!-- /Section 3 -->
+    
+<!-- Section 4 -->
+
+<!-- /Section 4 -->
+    
+<!-- Section 5 -->
+
+<!-- /Section 5 -->
+
+<!-- Footer -->
+
+<!-- /Footer -->
+    </div>
+<!-- Scripts js -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-    <!-- /Sripts js -->
+<!-- /Sripts js -->
 </body>
 </html>
