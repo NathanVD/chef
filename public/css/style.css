@@ -10997,6 +10997,7 @@ header .test {
 
 #section4 {
   background: url(../images/testimonials_background.jpg);
+  background-size: cover;
 }
 
 #section4 .row {
