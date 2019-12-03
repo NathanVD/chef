@@ -10798,23 +10798,27 @@ h1 {
 }
 
 .big {
+  font-size: 1.75rem;
+}
+
+.bigger {
   font-size: 3.5rem;
 }
 
 @media (max-width: 991.98px) {
-  .big {
+  .bigger {
     font-size: 3.25rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .big {
+  .bigger {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .big {
+  .bigger {
     font-size: 2.75rem;
   }
 }
@@ -11036,15 +11040,14 @@ header .test {
 }
 
 #section3 .section3 #blog .position-relative {
-  bottom: 5%;
+  bottom: 7%;
 }
 
 #section3 .section3 #blog .badge {
   max-width: 100%;
-}
-
-#section3 .section3 #blog .badge .number {
   font-size: 1.25rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 1rem;
 }
 
 #section4 {
