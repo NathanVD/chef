@@ -15,8 +15,7 @@ header
 
     // Carousel
     .carousel h1
-        font-size: 40px
-        padding: 0 25%
+        padding: 0 20vw
         margin-bottom: 50px
 
     .carousel-item img
@@ -27,11 +26,18 @@ header
 
     .carousel-caption
         top: 30%
+        .btns
+            margin-bottom: 5vh
         .btn
             border-radius: 10em
             padding: 10px 30px
         .btn-light a
             color: #000000
+        @media screen and (max-width: 768px)
+            display: block !important
+            top: 15%
+            h1
+                margin-bottom: 15px
 
     .carousel-indicators
         li

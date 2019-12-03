@@ -10770,16 +10770,53 @@ a.text-dark:hover, a.text-dark:focus {
   background: url("../images/main_bg.jpg") fixed;
 }
 
-.bg-dark-transparent {
-  background-color: #00000020;
-}
-
 a {
   color: #ffffff;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2.75rem;
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 .big {
-  font-size: 60px;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .big {
+    font-size: 3.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .big {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .big {
+    font-size: 2.75rem;
+  }
 }
 
 .great {
@@ -10817,8 +10854,7 @@ header #main-nav .liens a:hover, header #main-nav .liens .active {
 }
 
 header .carousel h1 {
-  font-size: 40px;
-  padding: 0 25%;
+  padding: 0 20vw;
   margin-bottom: 50px;
 }
 
@@ -10833,6 +10869,10 @@ header .carousel-caption {
   top: 30%;
 }
 
+header .carousel-caption .btns {
+  margin-bottom: 5vh;
+}
+
 header .carousel-caption .btn {
   border-radius: 10em;
   padding: 10px 30px;
@@ -10840,6 +10880,16 @@ header .carousel-caption .btn {
 
 header .carousel-caption .btn-light a {
   color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  header .carousel-caption {
+    display: block !important;
+    top: 15%;
+  }
+  header .carousel-caption h1 {
+    margin-bottom: 15px;
+  }
 }
 
 header .carousel-indicators li {
@@ -10939,6 +10989,8 @@ header .test {
 
 #section2 {
   background: url(../images/team_background.jpg);
+  background-position: 51% 43%;
+  background-size: 700%;
 }
 
 #section2 .col img {
@@ -10997,7 +11049,8 @@ header .test {
 
 #section4 {
   background: url(../images/testimonials_background.jpg);
-  background-size: cover;
+  background-position: 51% 84%;
+  background-size: 1000%;
 }
 
 #section5 .rounded {

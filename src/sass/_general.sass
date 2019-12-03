@@ -1,17 +1,28 @@
 .bg
     background: url('../images/main_bg.jpg') fixed
-
-.bg-dark-transparent
-    background-color: #00000020
-
 a
     color: #ffffff
-
+h1
+    text-align: center
+    font-size: 2.75rem
+    @include media-breakpoint-down(md)
+        font-size: 2.5rem
+    @include media-breakpoint-down(sm)
+        font-size: 2.25rem
+    @include media-breakpoint-down(xs)
+        font-size: 2rem
 .big
-    font-size: 60px
+    font-size: 3.5rem
+    @include media-breakpoint-down(md)
+        font-size: 3.25rem
+    @include media-breakpoint-down(sm)
+        font-size: 3rem
+    @include media-breakpoint-down(xs)
+        font-size: 2.75rem
 .great
     font-size: 1.25rem
 .maj
     text-transform: uppercase
 .courgette
     font-family: 'Courgette', cursive
+
