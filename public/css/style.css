@@ -11053,8 +11053,20 @@ header .test {
   background-size: 1000%;
 }
 
-#section5 .rounded {
+#section5 .section5 .rounded {
   border-radius: 1em !important;
+}
+
+@media (max-width: 991.98px) {
+  #section5 .section5 {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #section5 .section5 {
+    width: 90% !important;
+  }
 }
 
 footer .footer-bg {

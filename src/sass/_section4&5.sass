@@ -4,5 +4,11 @@
     background-size: 1000%
 
 #section5
-    .rounded
-        border-radius: 1em !important
+    .section5
+        .rounded
+            border-radius: 1em !important
+        @include media-breakpoint-down(md)
+            width: 75% !important
+        @include media-breakpoint-down(sm)
+            width: 90% !important
+
