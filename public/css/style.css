@@ -10787,18 +10787,24 @@ h1 {
 
 @media (max-width: 767.98px) {
   h1 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
 .big {
   font-size: 1.75rem;
+}
+
+@media (max-width: 991.98px) {
+  .big {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .big {
+    font-size: 0.75rem;
+  }
 }
 
 .bigger {
@@ -10813,18 +10819,28 @@ h1 {
 
 @media (max-width: 767.98px) {
   .bigger {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 575.98px) {
-  .bigger {
-    font-size: 2.75rem;
+.carBig {
+  font-size: 4.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .carBig {
+    font-size: 4.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carBig {
+    font-size: 3.5rem;
   }
 }
 
 .great {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .maj {
@@ -10833,6 +10849,22 @@ h1 {
 
 .courgette {
   font-family: 'Courgette', cursive;
+}
+
+.btn {
+  padding: 1rem 1.75rem;
+}
+
+@media (max-width: 991.98px) {
+  .btn {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .btn {
+    padding: 0.5rem 1.25rem;
+  }
 }
 
 header #main-nav {
@@ -10857,11 +10889,6 @@ header #main-nav .liens a:hover, header #main-nav .liens .active {
   background-color: #c42d40;
 }
 
-header .carousel h1 {
-  padding: 0 20vw;
-  margin-bottom: 50px;
-}
-
 header .carousel-item img {
   -webkit-filter: brightness(20%);
           filter: brightness(20%);
@@ -10873,23 +10900,13 @@ header .carousel-caption {
   top: 30%;
 }
 
-header .carousel-caption .btns {
-  margin-bottom: 5vh;
-}
-
-header .carousel-caption .btn {
-  border-radius: 10em;
-  padding: 10px 30px;
-}
-
 header .carousel-caption .btn-light a {
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 991.98px) {
   header .carousel-caption {
-    display: block !important;
-    top: 15%;
+    top: 10%;
   }
   header .carousel-caption h1 {
     margin-bottom: 15px;
@@ -10962,7 +10979,7 @@ header .test {
 }
 
 #section1 .section1 .nav-link:hover {
-  border-right: 5px solid #c42d40;
+  border-right: 5px solid #c42d40 !important;
 }
 
 #section1 .section1 .nav-link:hover .food {
@@ -10970,7 +10987,7 @@ header .test {
 }
 
 #section1 .section1 .nav-link.active {
-  border-right: 5px solid #c42d40;
+  border-right: 5px solid #c42d40 !important;
 }
 
 #section1 .section1 .nav-link.active .food {
@@ -10978,11 +10995,20 @@ header .test {
 }
 
 #section1 .section1 .media {
+  padding-bottom: 0.75rem;
   border-bottom: 1px dotted #dee2e6;
+}
+
+@media (max-width: 767.98px) {
+  #section1 .section1 .media .media-body {
+    -ms-flex-flow: wrap !important;
+        flex-flow: wrap !important;
+  }
 }
 
 #section1 .section1 .media img {
   border: 4px solid #dee2e6;
+  max-width: 130px;
 }
 
 @media (max-width: 575.98px) {
@@ -10997,6 +11023,10 @@ header .test {
   background-size: 700%;
 }
 
+#section2 .chefs {
+  margin: 0 10%;
+}
+
 #section2 .col img {
   border-bottom: 1px solid #6c757d;
 }
@@ -11008,10 +11038,10 @@ header .test {
 }
 
 #section3 .section3 #formulaireRéservation {
-  margin: 7% 0;
-  padding: 0 20%;
+  margin: 7%;
   border-radius: 1em;
   background: url("../images/book_table_bg.jpg");
+  background-size: cover;
 }
 
 #section3 .section3 #formulaireRéservation input, #section3 .section3 #formulaireRéservation select {
@@ -11045,7 +11075,6 @@ header .test {
 
 #section3 .section3 #blog .badge {
   max-width: 100%;
-  font-size: 1.25rem;
   padding: 1.5rem 1rem 1rem 1rem;
   border-radius: 1rem;
 }
