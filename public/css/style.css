@@ -11053,6 +11053,22 @@ header .test {
   background-size: 1000%;
 }
 
+#testimonials {
+  margin: 0% 10%;
+}
+
+#testimonials .rounded {
+  border-radius: 1em !important;
+}
+
+#testimonials .img-thumbnail, #testimonials .rounded {
+  margin: 5px 0;
+}
+
+#section5 {
+  margin: 3% 10%;
+}
+
 #section5 .section5 .rounded {
   border-radius: 1em !important;
 }
