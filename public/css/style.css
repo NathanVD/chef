@@ -11085,21 +11085,17 @@ header .test {
   }
 }
 
-footer .footer-bg {
-  background: url(../images/footer_background.jpg);
+footer {
+  background: url(../images/footer_bottom_decoration_img.png) repeat-x, url(../images/footer_background.jpg);
+  background-position: top, center;
 }
 
-footer .footer-bg h3 {
-  text-transform: uppercase;
+footer #footer {
+  margin: 0 10%;
 }
 
-footer .footer-bg .deco {
-  height: 15px;
-  position: relative;
-  right: 0;
-  top: 0;
-  left: 0;
-  z-index: 16;
-  background: url(../images/footer_bottom_decoration_img.png) repeat-x;
+footer #footer .badge {
+  padding: 0.75rem 1rem;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
