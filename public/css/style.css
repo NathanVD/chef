@@ -10840,7 +10840,25 @@ h1 {
 }
 
 .great {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .great {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .great {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .great {
+    font-size: 0.5rem;
+  }
 }
 
 .maj {
@@ -10979,7 +10997,7 @@ header .test {
 }
 
 #section1 .section1 .nav-link:hover {
-  border-right: 5px solid #c42d40 !important;
+  border-right: 6px solid #c42d40 !important;
 }
 
 #section1 .section1 .nav-link:hover .food {
@@ -10987,7 +11005,7 @@ header .test {
 }
 
 #section1 .section1 .nav-link.active {
-  border-right: 5px solid #c42d40 !important;
+  border-right: 6px solid #c42d40 !important;
 }
 
 #section1 .section1 .nav-link.active .food {
@@ -11044,24 +11062,25 @@ header .test {
   background-size: cover;
 }
 
-#section3 .section3 #formulaireRéservation input, #section3 .section3 #formulaireRéservation select {
-  border-radius: 0.5rem;
+#section3 .section3 #formulaireRéservation .form-control {
+  height: 45px;
+  border-radius: 0.75em;
 }
 
 #section3 .section3 #formulaireRéservation ::-webkit-input-placeholder {
-  color: #000;
+  color: #000000;
 }
 
 #section3 .section3 #formulaireRéservation :-ms-input-placeholder {
-  color: #000;
+  color: #000000;
 }
 
 #section3 .section3 #formulaireRéservation ::-ms-input-placeholder {
-  color: #000;
+  color: #000000;
 }
 
 #section3 .section3 #formulaireRéservation ::placeholder {
-  color: #000;
+  color: #000000;
 }
 
 #section3 .section3 #blog .row img {
